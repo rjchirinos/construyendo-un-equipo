@@ -38,7 +38,7 @@
   text-align: center;
   margin: auto;
   position: relative;
-  top: -65px;
+  top: -85px;
   left: 0;
   width: 65%;
   color: #e8444b;
@@ -76,6 +76,7 @@
   text-align: center;
   background-color: #91d3d9;
   color: white;
+  padding-bottom: 15px;
 }
 
 #section4 h3{
@@ -91,3 +92,66 @@
   margin-bottom: 20px;
   background-color: #48c0c0;
 }
+
+#section5{
+  text-align: center;
+  background-color: #e8444b;
+  color: white;
+}
+
+#section5 h3{
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+#section5 p{
+  text-align: left;
+  font-weight: bold;
+}
+
+.section5-body{
+  width: 90%;
+  margin: auto;
+}
+
+img{
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+#section6{
+  background-color: #78c0d8;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.form{
+  width: 90%;
+  margin: auto;
+}
+
+#section6 h3{
+  padding-top: 20px;
+}
+
+input, textarea{
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  margin: 3px;
+  color: #78c0d8;
+  font-weight: bold;
+  width: 90%;
+  padding: 5px;
+
+}
+
+.btn{
+  background-color: #48c0c0;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
