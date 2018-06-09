@@ -15,10 +15,10 @@
 .text-box{
   margin: auto;
   background-color: rgba(255, 255, 255, 0.4);
-  width: 80%;
+  width: 70%;
   color: rgba(255, 255, 255, 0.5);
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1rem;
   padding-bottom: 20px;
 }
 
@@ -153,5 +153,40 @@ input, textarea{
   font-size: 20px;
   width: 80%;
   margin-bottom: 20px;
+}
+
+.dot-animation1, .dot-animation2 {
+  display: block;
+  margin-top: 2rem;
+}
+.dot-animation1 span, .dot-animation2 span {
+  display: inline-block;
+  margin-top: 1rem;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+}
+
+.dot-animation1 span:nth-child(1) {
+  background: white;
+  border: 0.2rem solid #48c0c0;
+  animation: move 1s ease-in-out -0.787s infinite alternate;
+  margin: auto;
+}
+.dot-animation2 span:nth-child(1) {
+  background: white;
+  border: 0.2rem solid #48c0c0;
+  animation: move 1s ease-in-out -5.574s infinite alternate;
+  margin: auto;
+}
+
+
+@keyframes move {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(60px);
+  }
 }
 

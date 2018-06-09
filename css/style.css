@@ -9,7 +9,7 @@ body {
   width: 20%;
   height: 2700px;
   margin-top: 450px;
-  margin-left: 10px;
+  margin-left: 1%;
   z-index: 1;
   position: absolute;
 }
@@ -52,6 +52,7 @@ body {
 }
 
 .ribbon {
+  padding-top: 1rem;
   margin: auto;
   width: 40%;
 }
