@@ -71,3 +71,23 @@
   background-color: white;
   text-align: center;
 }
+
+#section4{
+  text-align: center;
+  background-color: #91d3d9;
+  color: white;
+}
+
+#section4 h3{
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.blue-box{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #48c0c0;
+}
