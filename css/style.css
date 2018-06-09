@@ -39,7 +39,7 @@ body {
 
 .text-box {
   margin: auto;
-  width: 40%;
+  width: 100%;
   background: rgba(255, 255, 255, 0.4);
   color: rgba(255, 255, 255, 0.5);
   font-size: 2rem;
@@ -189,4 +189,45 @@ input, textarea{
   font-size: 20px;
   width: 80%;
   margin-bottom: 20px;
+}
+
+.dot-animation {
+  display: block;
+  margin-top: 2rem;
+}
+.dot-animation span {
+  display: inline-block;
+  margin-top: 0.5rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+
+.dot-animation span:nth-child(1) {
+  background: white;
+  border: 5px solid #48c0c0;
+  animation: move 1s ease-in-out -0.787s infinite alternate;
+  margin-left: 5%;
+}
+.dot-animation span:nth-child(2) {
+  background: white;
+  border: 5px solid #48c0c0;
+  animation: move 1s ease-in-out -5.574s infinite alternate;
+  margin-left: 50%;
+}
+.dot-animation span:nth-child(3) {
+  background: white;
+  border: 5px solid #48c0c0;
+  animation: move 1s ease-in-out -2.361s infinite alternate;
+  margin-left: 45%;
+}
+
+
+@keyframes move {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(60px);
+  }
 }
