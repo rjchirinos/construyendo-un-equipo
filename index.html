@@ -10,11 +10,19 @@
 
       <link rel="stylesheet" href="css/style.css">
 
+  <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type='text/javascript' src="js/jquery.arctext.js"></script>
+ 
+  <script>
+    $(document).ready(function() {
+      $("#curved-title").arctext({radius: 600});
+    });
+  </script>
+
   
 </head>
 
 <body>
-
   <div class="banner">
   <h3 class="text-primary">GUIA</h3>
   <marquee height="450px" class="quotes" behavior="scroll" direction="up" scrollamount="2">
@@ -26,14 +34,13 @@ cuerdas todos los días.<br /><br />
 People can dismiss your start-up but you never can.<br /><br />
 You cant build Twitter looking for it. Make something unsexy people will pay for.<br /><br />
 Las ideas que parecen malas son las mejores, ya que no hay gente trabajando en ellas.<br /><br />
-Intensity→ you can ́t have other hobbies.<br /><br />
+Intensity→ you can't have other hobbies.<br /><br />
     Lo mejor es ir a por un mercado pequeño pero en crecimiento y expandirse desde ahí.
   </marquee>
 </div>
 
 <div class="content">
-  <h2>Construyendo un Equipo</h2>
-  
+  <div id="curved-title">Construyendo un Equipo</div>
   <div class="text-box">
     <p>"You need three things to create a sucessfull startup:</p>
     <ul>

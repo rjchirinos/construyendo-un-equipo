@@ -29,11 +29,12 @@ body {
   text-align: center;
   z-index: 0;
 }
-.content h2 {
+.content #curved-title {
   font-weight: bold;
   color: white;
   font-family: Lobster;
   font-size: 3rem;
+  margin-bottom: 30px;
 }
 
 .text-box {
