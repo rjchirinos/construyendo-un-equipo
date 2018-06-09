@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster|Montserrat");
+
+#section1 {
+  background-color: #e8444b;
+}
+
+#curved-title{
+  text-align: center;
+  font-family: Lobster;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.text-box{
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 80%;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding-bottom: 20px;
+}
+
+.text-box .black{
+  color: black;
+}
+.ribbon {
+  margin: auto;
+  width: 100%;
+  margin-top: -20px;
+}
+.ribbon img {
+  position: relative;
+  width: 100%;
+}
+.ribbon h5 {
+  text-align: center;
+  margin: auto;
+  position: relative;
+  top: -65px;
+  left: 0;
+  width: 65%;
+  color: #e8444b;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+#section2{
+  background-color: #d7e7f1;
+  height: 500px;
+  position: relative;
+}
+
+#section2 .box{
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-17%, -50%);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+#section2 h3{
+  text-align: center;
+  color: blue;
+}
+
+#section3{
+  width: 90%;
+  margin: auto;
+  background-color: white;
+  text-align: center;
+}
