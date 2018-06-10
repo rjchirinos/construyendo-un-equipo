@@ -1,7 +1,7 @@
  @import url('https://fonts.googleapis.com/css?family=Lobster|Muli');
 @font-face{
   font-family: 'BOOKOS';
-  src: local('fonts/BOOKOS.TTF')  format('truetype');
+  src: local('../fonts/BOOKOS.TTF')  format('truetype');
 }
 
 body {
@@ -13,7 +13,7 @@ body {
   background-color: rgba(220, 220, 255, 0.5);
   width: 20.74%;
   height: 182rem;
-  margin-top: 33rem;
+  margin-top: 38rem;
   margin-left: 1%;
   z-index: 1;
   position: absolute;
@@ -67,7 +67,7 @@ body {
   margin-bottom: 60px;
 }
 
-.text-box {
+.pink-box {
   margin: auto;
   width: 46.75%;
   position: relative;
@@ -80,8 +80,37 @@ body {
   font-size: 33.33px;
   top: -8rem;
 }
-.text-box .black {
+
+.pink-box .text-box{
+  width: 90%;
+  margin: auto;
+}
+
+.pink-box li {
+  margin-left: 1rem;
+}
+
+.pink-box .bullet1{
   color: black;
+  list-style-image:url('../images/people_icon.png');
+}
+
+.pink-box .bullet2{
+  list-style-image:url('../images/tools_icon.png');
+}
+
+.pink-box .bullet3{
+  list-style-image:url('../images/piggybank_icon.png');
+
+}
+
+.profile{
+  /*display: inline-block;*/
+  position: relative;
+  margin-right: 0;
+  bottom: 20px;
+  width: 35%;
+  font-size: 15px;
 }
 
 .ribbon {
@@ -89,7 +118,8 @@ body {
   margin: auto;
   width: 40%;
   position: relative;
-  top: -9rem;
+  top: -8rem;
+  height: 3rem;
 }
 .ribbon img {
   position: relative;
@@ -102,6 +132,7 @@ body {
   top: -110px;
   left: 0;
   width: 65%;
+  height: 50%;
   color: #e84148;
   font-family: 'Muli';
   font-weight: 900;
@@ -146,12 +177,47 @@ body {
 .blue-box{
   display: block;
   width: 80%;
-  height: 250px;
+  height: 320px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: #4dbcc7;
+}
+
+.blue-box span{
+  display: block;
+  position: relative;
+  top: 6px;
+  left: 10px;
+  text-align: left;
+  font-family: 'Muli';
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.blue-box img{
+  display: inline-block;
+  position: relative;
+  bottom: 15px;
+  width: 40%;
+  float: right;
+}
+
+#img2{
+  bottom: 8%;
+}
+
+#img3{
+  bottom: -20%;
+}
+
+.red-text{
+  color: #e8444b;
+}
+
+.blue-text{
+  color: #7190a5;
 }
 
 .blue-box p{
@@ -160,10 +226,12 @@ body {
   top: 50%;
   transform: translateY(-50%); 
   width: 80.77%;
+  z-index: 2;
   font-family: 'Muli';
   font-size: 24px;
   font-weight: 900;
   text-align: left;
+  margin-bottom: 1rem;
 }
 
 #section3 .container{
@@ -270,7 +338,7 @@ input, textarea{
   margin-top: 10px;
   width:100px;
   margin:10px 1px;
-  height:5px;
+  height:10px;
   background:#48c0c0;
 }
 .dot-animation span:first-child {

@@ -114,6 +114,10 @@
   font-weight: bold;
 }
 
+.red-text{
+  color: #e8444b;
+}
+
 .blue-box{
   width: 90%;
   margin-left: auto;
