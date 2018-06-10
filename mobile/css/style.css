@@ -14,12 +14,14 @@
 
 .text-box{
   margin: auto;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #e3797d;
   width: 70%;
   color: rgba(255, 255, 255, 0.5);
   font-weight: bold;
   font-size: 1rem;
   padding-bottom: 20px;
+  position: relative;
+  top: -9rem;
 }
 
 .text-box .black{
@@ -28,7 +30,7 @@
 .ribbon {
   margin: auto;
   width: 100%;
-  margin-top: -20px;
+  margin-top: -10rem;
 }
 .ribbon img {
   position: relative;
@@ -155,38 +157,70 @@ input, textarea{
   margin-bottom: 20px;
 }
 
-.dot-animation1, .dot-animation2 {
+.dot-animation {
   display: block;
-  margin-top: 2rem;
+  padding:60px;
+  width: 500%;
+  position: relative;
+  left: -50%;
+  top: 3rem;
+
 }
-.dot-animation1 span, .dot-animation2 span {
+.dot-animation span {
+  position:relative;
   display: inline-block;
-  margin-top: 1rem;
-  height: 1rem;
-  width: 1rem;
+  margin-top: 10px;
+  width:70px;
+  margin:10px 1px;
+  height:5px;
+  background:#48c0c0;
+}
+.dot-animation span:first-child {
+  background:#48c0c0;
+}
+.dot-animation span:before {
+  content:"";
+  position:absolute;
+  z-index:2;
+  right:-12px;
+  top:-12px;
+  height: 1.5rem;
+  width: 1.5rem;
+  background: white;
+  border: 5px solid #48c0c0;
   border-radius: 50%;
 }
 
-.dot-animation1 span:nth-child(1) {
-  background: white;
-  border: 0.2rem solid #48c0c0;
-  animation: move 1s ease-in-out -0.787s infinite alternate;
-  margin: auto;
+.dot-animation span:nth-child(even) {
+  animation:move-l 0.5s linear infinite alternate;
+  transform-origin:left;
 }
-.dot-animation2 span:nth-child(1) {
-  background: white;
-  border: 0.2rem solid #48c0c0;
-  animation: move 1s ease-in-out -5.574s infinite alternate;
-  margin: auto;
+.dot-animation span:nth-child(even):before {
+  animation:move-r 0.5s linear infinite alternate;
 }
+.dot-animation span:nth-child(odd) {
+  animation:move-r 0.5s linear infinite alternate;
+  transform-origin:right;
+}
+.dot-animation span:nth-child(odd):before {
+  animation:move-l 0.5s linear infinite alternate;
+  transform-origin:right;
+}
+ 
 
-
-@keyframes move {
+@keyframes move-l {
   from {
-    transform: translateY(0px);
+    transform: skewY(25deg);
   }
   to {
-    transform: translateY(60px);
+    transform: skewY(-50deg);
   }
 }
-
+@keyframes move-r {
+  from {
+    transform: skewY(-25deg);
+  }
+  to {
+    transform: skewY(50deg);
+  }
+}
