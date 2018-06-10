@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Lobster|Montserrat");
+ @import url('https://fonts.googleapis.com/css?family=Lobster|Muli');
+@font-face{
+  font-family: 'BOOKOS';
+  src: local('fonts/BOOKOS.TTF')  format('truetype');
+}
+
 body {
   background: #e84148;
   z-index: 0;
@@ -14,7 +19,10 @@ body {
   position: absolute;
 }
 .banner .text-primary {
-  font-weight: bold;
+  padding: 2px;
+  font-family: 'Muli';
+  font-weight: 900;
+  font-size: 33.14px;
   text-align: center;
 }
 
@@ -34,6 +42,8 @@ body {
 }
 
 .marquee {
+  font-family: 'Muli', sans-serif;
+  font-size: 20.83px;
   box-sizing: border-box;
   color: black;
   font-weight: bold;
@@ -42,7 +52,7 @@ body {
   overflow: hidden;
   padding: 0 4%;
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 
 .section {
@@ -51,7 +61,6 @@ body {
   z-index: 0;
 }
 #curved-title {
-  font-weight: bold;
   color: white;
   font-family: Lobster;
   font-size: 4rem;
@@ -66,9 +75,9 @@ body {
   color: rgba(255, 255, 255, 0.5);
   font-size: 2rem;
   text-align: left;
-  font-family: Montserrat;
+  font-family: 'Bookman Old Style', 'BOOKOS', 'Muli' , sans-serif;
   font-weight: bold;
-  font-size: 200%;
+  font-size: 33.33px;
   top: -8rem;
 }
 .text-box .black {
@@ -94,7 +103,8 @@ body {
   left: 0;
   width: 65%;
   color: #e84148;
-  font-weight: bold;
+  font-family: 'Muli';
+  font-weight: 900;
   font-size: 110%;
 }
 
@@ -118,7 +128,9 @@ body {
   text-shadow: 0px 0px 8px #7190a5;
   padding-top: 300px;
   padding-bottom: 400px;
-  font-weight: bold;
+  font-family: 'Muli';
+  font-weight: 900;
+  font-size: 36px;
 }
 
 #section3 {
@@ -126,7 +138,9 @@ body {
   margin-top: -10px;
 }
 #section3 h3{
-  font-weight: bold;
+  font-family: 'Muli';
+  font-size: 50px;
+  font-weight: 900;
 }
 
 .blue-box{
@@ -146,7 +160,10 @@ body {
   top: 50%;
   transform: translateY(-50%); 
   width: 80.77%;
-  font-weight: bold;
+  font-family: 'Muli';
+  font-size: 24px;
+  font-weight: 900;
+  text-align: left;
 }
 
 #section3 .container{
@@ -168,13 +185,16 @@ body {
 }
 
 #section4 h3{
-  font-weight: bold;
+  font-family: 'Muli';
+  font-size: 50px;
+  font-weight: 900;
   text-align: center;
 }
 
 .section4-body{
-  font-size: 1.8rem;
-  font-weight: bold;
+  font-family: 'Muli';
+  font-size: 23.75px;
+  font-weight: 900;
   text-align: left;
   width: 79%;
   margin: auto;
@@ -196,7 +216,15 @@ img{
   color: white;
 }
 
-#section5 h3, #section5 p{
+#section5 h3{
+  font-family: 'Muli';
+  font-size: 50px;
+  font-weight: 900;
+}
+
+#section5 p{
+  font-family: 'Muli';
+  font-size: 29.17px;
   font-weight: bold;
   text-align: center;
   color: white;
@@ -209,8 +237,10 @@ img{
 input, textarea{
   background-color: #b0ebef;
   border: none;
-  margin: 3px;
+  margin: 1rem;
   color: #86c2c7;
+  font-family: 'Muli';
+  font-size: 29.17px;
   font-weight: bold;
   width: 90%;
   padding: 5px;
