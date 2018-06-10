@@ -39,13 +39,15 @@ body {
 
 .text-box {
   margin: auto;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.4);
+  width: 40%;
+  position: relative;
+  background: #e3797d;
   color: rgba(255, 255, 255, 0.5);
   font-size: 2rem;
   text-align: left;
   font-family: Montserrat;
   font-weight: bold;
+  top: -8rem;
 }
 .text-box .black {
   color: black;
@@ -69,6 +71,10 @@ body {
   width: 65%;
   color: #e8444b;
   font-weight: bold;
+}
+
+#section1{
+  width: 100%;
 }
 
 #section2 {
@@ -194,41 +200,67 @@ input, textarea{
 
 .dot-animation {
   display: block;
-  margin-top: 2rem;
+  padding:60px;
+  width: 200%;
+  position: relative;
+  left: -50%;
+  top: 8rem;
 }
 .dot-animation span {
+  position:relative;
   display: inline-block;
-  margin-top: 0.5rem;
-  height: 2rem;
-  width: 2rem;
+  margin-top: 10px;
+  width:100px;
+  margin:10px 1px;
+  height:5px;
+  background:#48c0c0;
+}
+.dot-animation span:first-child {
+  background:#48c0c0;
+}
+.dot-animation span:before {
+  content:"";
+  position:absolute;
+  z-index:2;
+  right:-12px;
+  top:-12px;
+  height: 1.8rem;
+  width: 1.8rem;
+  background: white;
+  border: 5px solid #48c0c0;
   border-radius: 50%;
 }
 
-.dot-animation span:nth-child(1) {
-  background: white;
-  border: 5px solid #48c0c0;
-  animation: move 1s ease-in-out -0.787s infinite alternate;
-  margin-left: 5%;
+.dot-animation span:nth-child(even) {
+  animation:move-l 0.5s linear infinite alternate;
+  transform-origin:left;
 }
-.dot-animation span:nth-child(2) {
-  background: white;
-  border: 5px solid #48c0c0;
-  animation: move 1s ease-in-out -5.574s infinite alternate;
-  margin-left: 50%;
+.dot-animation span:nth-child(even):before {
+  animation:move-r 0.5s linear infinite alternate;
 }
-.dot-animation span:nth-child(3) {
-  background: white;
-  border: 5px solid #48c0c0;
-  animation: move 1s ease-in-out -2.361s infinite alternate;
-  margin-left: 45%;
+.dot-animation span:nth-child(odd) {
+  animation:move-r 0.5s linear infinite alternate;
+  transform-origin:right;
 }
+.dot-animation span:nth-child(odd):before {
+  animation:move-l 0.5s linear infinite alternate;
+  transform-origin:right;
+}
+ 
 
-
-@keyframes move {
+@keyframes move-l {
   from {
-    transform: translateY(0px);
+    transform: skewY(25deg);
   }
   to {
-    transform: translateY(60px);
+    transform: skewY(-50deg);
+  }
+}
+@keyframes move-r {
+  from {
+    transform: skewY(-25deg);
+  }
+  to {
+    transform: skewY(50deg);
   }
 }
