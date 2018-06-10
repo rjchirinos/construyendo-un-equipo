@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster|Muli');
-
+@import url('https://fonts.googleapis.com/css?family=Lobster|Muli:400,700,900');
 html,body
 {
     width: 100%;
@@ -22,29 +21,63 @@ h3{
   font-size: 2.2rem;
   color: white;
   padding-top: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
-.text-box{
+.pink-box{
   margin: auto;
   background-color: #e18586;
   width: 70%;
   color: rgba(255, 255, 255, 0.5);
-  font-weight: bold;
-  font-size: 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
   padding-bottom: 20px;
   position: relative;
   top: -9rem;
   font-family: 'Bookman Old Style', 'Muli';
+  font-weight: 700;
 }
 
-.text-box .black{
-  color: black;
+.pink-box .text-box{
+  width: 90%;
+  margin: auto;
 }
+
+ul{
+  list-style-position: inside;
+}
+
+.pink-box li {
+  margin-left: 0.2rem;
+}
+
+.pink-box .bullet1{
+  color: black;
+  list-style-image:url('../../images/people_icon.png');
+}
+
+.pink-box .bullet2{
+  list-style-image:url('../../images/tools_icon.png');
+}
+
+.pink-box .bullet3{
+  list-style-image:url('../../images/piggybank_icon.png');
+
+}
+
+.profile{
+  /*display: inline-block;*/
+  position: relative;
+  /*margin-right: 0;*/
+  bottom: 20px;
+  width: 90%;
+  padding-top: 2rem;
+}
+
 .ribbon {
   margin: auto;
   width: 100%;
-  margin-top: -10rem;
+  margin-top: -13rem;
 }
 .ribbon img {
   position: relative;
@@ -60,7 +93,7 @@ h3{
   color: #d55053;
   font-family: 'Muli';
   font-weight: 900;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 #section2{
@@ -78,7 +111,7 @@ h3{
   margin: auto;
   color: #b5c8d6;
   font-family: 'Muli';
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   font-size: 0.5rem;
 }
@@ -143,7 +176,7 @@ h3{
   box-sizing: border-box;
   font-family: 'Muli';
   color: black;
-  font-weight: bold;
+  font-weight: 700;
   height: 300px;
   margin: 0 auto;
   overflow: hidden;
@@ -197,7 +230,7 @@ h3{
 
 #section5 p{
   text-align: left;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .section5-body{
@@ -214,7 +247,7 @@ img{
   background-color: #8dd4da;
   text-align: center;
   color: white;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .form{
@@ -235,7 +268,7 @@ input, textarea{
   border: none;
   margin: 3px;
   color: #7ab7bd;
-  font-weight: bold;
+  font-weight: 700;
   font-family: 'Muli';
   width: 90%;
   padding: 5px;
@@ -245,7 +278,7 @@ input, textarea{
 .btn{
   background-color: #48c0c0;
   color: white;
-  font-weight: bold;
+  font-weight: 700;
   font-family: 'Muli';
   font-size: 20px;
   width: 80%;
