@@ -8,15 +8,33 @@
   
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
 
-      <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
-  <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!--   <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
   <script type='text/javascript' src="../js/jquery.arctext.js"></script>
+
+  <script type="text/javascript" src='https://cdn.jsdelivr.net/jquery.marquee/1.3.9/jquery.marquee.min.js'></script>
+
+  <script  src="js/index.js"></script>
  
   <script>
     $(document).ready(function() {
       $("#curved-title").arctext({radius: 600});
     });
+  </script>
+
+  <script>
+    $(document).ready(function() {
+      $('.marquee').marquee({
+        duration: 15000,
+        gap: 1,
+        delayBeforeStart: 1500,
+        direction: 'up',
+        duplicated: true,
+        startVisible: true
+    });
+});
   </script>
 
   
@@ -56,7 +74,8 @@
 
   <div class="section" id="section3">
     <h3 class="text-primary">GUIA</h3>
-    <marquee height="450px" class="quotes" behavior="scroll" direction="up" scrollamount="2" scrolldelay="-10">
+    <div class="flexBox">
+    <div class='marquee'>
       Sal ahí fuera y prueba diferentes cosas hasta que descubras donde dan resultado tus talentos,
   intereses y prioridades<br /><br />
   The best founders get things done every time. Small chunks at a time.<br /><br />
@@ -67,7 +86,8 @@
   Las ideas que parecen malas son las mejores, ya que no hay gente trabajando en ellas.<br /><br />
   Intensity→ you can't have other hobbies.<br /><br />
       Lo mejor es ir a por un mercado pequeño pero en crecimiento y expandirse desde ahí.
-    </marquee>
+    </div>
+  </div>
   </div>
 
   <div class="section" id="section4">
