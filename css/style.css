@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster|Montserrat");
 body {
-  background: #e8444b;
+  background: #e84148;
   z-index: 0;
 }
 
 .banner {
-  background-color: rgba(200, 200, 255, 0.5);
-  width: 20%;
+  background-color: rgba(220, 220, 255, 0.5);
+  width: 20.74%;
   height: 182rem;
-  margin-top: 450px;
+  margin-top: 33rem;
   margin-left: 1%;
   z-index: 1;
   position: absolute;
@@ -60,14 +60,15 @@ body {
 
 .text-box {
   margin: auto;
-  width: 40%;
+  width: 46.75%;
   position: relative;
-  background: #e3797d;
+  background: #ef7a80;
   color: rgba(255, 255, 255, 0.5);
   font-size: 2rem;
   text-align: left;
   font-family: Montserrat;
   font-weight: bold;
+  font-size: 200%;
   top: -8rem;
 }
 .text-box .black {
@@ -92,8 +93,9 @@ body {
   top: -110px;
   left: 0;
   width: 65%;
-  color: #e8444b;
+  color: #e84148;
   font-weight: bold;
+  font-size: 110%;
 }
 
 #section1{
@@ -101,7 +103,7 @@ body {
 }
 
 #section2 {
-  background: #d7e7f1;
+  background: #dff1fd;
 }
 #section2 .section-two-container {
   width: 78%;
@@ -110,6 +112,8 @@ body {
 }
 #section2 .section-two-container h1 {
   text-align: center;
+  width: 72.2%;
+  margin: auto;
   color: #7190a5;
   text-shadow: 0px 0px 8px #7190a5;
   padding-top: 300px;
@@ -118,7 +122,7 @@ body {
 }
 
 #section3 {
-  background-color: #91d3d9;
+  background-color: #8dd4da;
   margin-top: -10px;
 }
 #section3 h3{
@@ -133,7 +137,7 @@ body {
   margin-right: auto;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: #48c0c0;
+  background-color: #4dbcc7;
 }
 
 .blue-box p{
@@ -141,7 +145,7 @@ body {
   position: relative;
   top: 50%;
   transform: translateY(-50%); 
-  width: 80%;
+  width: 80.77%;
   font-weight: bold;
 }
 
@@ -153,7 +157,7 @@ body {
 }
 
 #section4{
-  background-color: #e8444b;
+  background-color: #e84148;
 }
 
 #section4-content{
@@ -172,7 +176,7 @@ body {
   font-size: 1.8rem;
   font-weight: bold;
   text-align: left;
-  width: 80%;
+  width: 79%;
   margin: auto;
 }
 
@@ -182,7 +186,7 @@ img{
 }
 
 #section5{
-  background-color: #78c0d8
+  background-color: #8dd4da;
 }
 
 #section5-content{
@@ -203,21 +207,22 @@ img{
   margin: auto;
 }
 input, textarea{
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #b0ebef;
   border: none;
   margin: 3px;
-  color: #78c0d8;
+  color: #86c2c7;
   font-weight: bold;
   width: 90%;
   padding: 5px;
 }
 
 .btn{
-  background-color: #48c0c0;
+  background-color: #4dbcc7;
   color: white;
   font-weight: bold;
   font-size: 20px;
-  width: 80%;
+  width: 42%;
+  margin: 1rem;
   margin-bottom: 20px;
 }
 
@@ -276,7 +281,7 @@ input, textarea{
     transform: skewY(25deg);
   }
   to {
-    transform: skewY(-50deg);
+    transform: skewY(-25deg);
   }
 }
 @keyframes move-r {
@@ -284,6 +289,6 @@ input, textarea{
     transform: skewY(-25deg);
   }
   to {
-    transform: skewY(50deg);
+    transform: skewY(25deg);
   }
 }
