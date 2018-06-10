@@ -1,12 +1,21 @@
-@import url("https://fonts.googleapis.com/css?family=Lobster|Montserrat");
+@import url('https://fonts.googleapis.com/css?family=Lobster|Muli');
+
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 
 #section1 {
-  background-color: #e8444b;
+  background-color: #d55053;
 }
 
 #curved-title{
   text-align: center;
   font-family: Lobster;
+  font-size: 2.2rem;
   color: white;
   padding-top: 20px;
   padding-bottom: 30px;
@@ -14,7 +23,7 @@
 
 .text-box{
   margin: auto;
-  background-color: #e3797d;
+  background-color: #e18586;
   width: 70%;
   color: rgba(255, 255, 255, 0.5);
   font-weight: bold;
@@ -22,6 +31,7 @@
   padding-bottom: 20px;
   position: relative;
   top: -9rem;
+  font-family: 'Bookman Old Style', 'Muli';
 }
 
 .text-box .black{
@@ -43,13 +53,14 @@
   top: -85px;
   left: 0;
   width: 65%;
-  color: #e8444b;
-  font-weight: bold;
-  font-size: 0.9rem;
+  color: #d55053;
+  font-family: 'Muli';
+  font-weight: 900;
+  font-size: 0.8rem;
 }
 
 #section2{
-  background-color: #d7e7f1;
+  background-color: #dff1fd;
   height: 500px;
   position: relative;
 }
@@ -63,8 +74,10 @@
 }
 
 #section2 h3{
+  font-family: 'Muli';
+  font-weight: 900;
   text-align: center;
-  color: blue;
+  color: #0d4d71;
 }
 
 #section3{
@@ -72,6 +85,11 @@
   margin: auto;
   background-color: white;
   text-align: center;
+}
+
+#section3 h3{
+  font-family: 'Muli';
+  font-weight: 900;
 }
 
 .flexBox {
@@ -91,6 +109,7 @@
 
 .marquee {
   box-sizing: border-box;
+  font-family: 'Muli';
   color: black;
   font-weight: bold;
   height: 300px;
@@ -104,18 +123,20 @@
 
 #section4{
   text-align: center;
-  background-color: #91d3d9;
+  background-color: #8dd4da;
   color: white;
   padding-bottom: 15px;
 }
 
 #section4 h3{
-  padding-top: 20px;
-  font-weight: bold;
+  font-size: 2.3rem;
+  padding: 20px;
+  font-family: 'Muli';
+  font-weight: 900;
 }
 
 .red-text{
-  color: #e8444b;
+  color: #d55053;
 }
 
 .blue-box{
@@ -124,18 +145,20 @@
   margin-right: auto;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: #48c0c0;
+  background-color: #4dbcc7;
 }
 
 #section5{
   text-align: center;
-  background-color: #e8444b;
+  background-color: #e84148;
   color: white;
 }
 
 #section5 h3{
-  padding-top: 20px;
-  font-weight: bold;
+  font-weight: 900;
+  font-family: 'Muli';
+  font-size: 2.3rem;
+  padding: 20px;
 }
 
 #section5 p{
@@ -154,7 +177,7 @@ img{
 }
 
 #section6{
-  background-color: #78c0d8;
+  background-color: #8dd4da;
   text-align: center;
   color: white;
   font-weight: bold;
@@ -166,15 +189,19 @@ img{
 }
 
 #section6 h3{
-  padding-top: 20px;
+  font-weight: 900;
+  font-family: 'Muli';
+  font-size: 2.3rem;
+  padding: 20px;
 }
 
 input, textarea{
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #b0ebef;
   border: none;
   margin: 3px;
-  color: #78c0d8;
+  color: #7ab7bd;
   font-weight: bold;
+  font-family: 'Muli';
   width: 90%;
   padding: 5px;
 
@@ -184,6 +211,7 @@ input, textarea{
   background-color: #48c0c0;
   color: white;
   font-weight: bold;
+  font-family: 'Muli';
   font-size: 20px;
   width: 80%;
   margin-bottom: 20px;
